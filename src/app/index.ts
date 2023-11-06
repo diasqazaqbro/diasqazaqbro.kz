@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
 import Vue3Lottie from 'vue3-lottie'
 import App from './index.vue'
-import { router, store } from './providers'
+import { router } from './providers'
 // Vuetify
 import '@fortawesome/fontawesome-free/css/all.css'
 import { createVuetify } from 'vuetify'
@@ -24,4 +24,4 @@ const vuetify = createVuetify({
 	},
 
 })
-export const app = createApp(App).use(router).use(store).use(vuetify).use(Vue3Lottie)
+export const app = createApp(App).use(router).use(vuetify).use(Vue3Lottie)
