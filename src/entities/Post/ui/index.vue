@@ -1,11 +1,12 @@
 <template>
   <div class='post'>
     <v-card class='post rounded-lg' variant="tonal">
-      <h2>🙏 27 Principles for 27 Years</h2>
-      <h4>Jul 14, 2023 • 3 min • Life</h4>
+      <h2>🙏 Неоморфизм и почему он плох.</h2>
+      <h4>1 апреля 2023 года.</h4>
       <v-card-actions>
-        <v-btn variant='text'>
-          Read more
+
+        <v-btn color='blue' variant='text'>
+          <router-link to='/articles/neomorphism' class='text-blue'>Прочитать</router-link>
         </v-btn>
       </v-card-actions>
     </v-card>

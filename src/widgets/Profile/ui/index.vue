@@ -2,7 +2,7 @@
   <div class='profile'>
     <v-row justify="center">
       <v-col cols="3">
-        <v-avatar image="https://i.pinimg.com/originals/33/5a/98/335a98bd806ff8b88ba55ba79cc11927.jpg"
+        <v-avatar class='avatar' image="https://i.pinimg.com/originals/33/5a/98/335a98bd806ff8b88ba55ba79cc11927.jpg"
           size="150"></v-avatar>
       </v-col>
       <v-col cols='9'>

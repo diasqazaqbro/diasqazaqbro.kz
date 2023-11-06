@@ -1,18 +1,25 @@
 
 <template>
   <div class='container'>
-    <Profile/>
+    <Profile />
     <div class='main'>
       <v-row>
         <v-col>
-          <RecentPost/>
+          <RecentPost />
         </v-col>
         <v-col style='margin-top: 52px;'>
-          <NavBar/>
-          <WakaTime/>
-          <GithubLink/>
+          <NavBar />
+          <WakaTime />
+          <GithubLink />
         </v-col>
       </v-row>
+      <v-btn size='x-large' variant="text">
+        Основные навыки
+      </v-btn>
+      <div style='margin-left: 20px;'>
+        <Skills :info='info' />
+      </div>
+
     </div>
     <Vue3Lottie :animationData="PoliteChicky" :height="200" :width="200" />
 
@@ -21,66 +28,44 @@
 
 <script lang="ts">
 
-import axios from 'axios'
-import { ref } from 'vue'
 import { GithubLink } from "../../entities/GithubLink"
 import { NavBar } from "../../entities/NavBar"
+import { Skills } from "../../entities/Skills"
 import { WakaTime } from "../../entities/WakaTime"
 import PoliteChicky from '../../features/Polite.json'
 import { Profile } from "../../widgets/Profile"
 import { RecentPost } from "../../widgets/RecentPost"
 
-interface IDataItems {
-  color: string
-  decimal: string
-  digital: string
-  hours: number
-  minutes: number
-  name: string
-  percent: number
-  text: string
-  total_seconds: number
-}
-
 
 export default {
   components: {
-    Profile, 
+    Profile,
     RecentPost,
     GithubLink,
     NavBar,
-    WakaTime
+    WakaTime,
+    Skills
   },
-  setup() {
-    
-    const dataItems1 = ref<IDataItems | any>([])
-    const dataItems2 = ref<IDataItems | any>([])
-    const dataItems3 = ref<IDataItems | any>([])
-    const github = ref<any>({})
 
-    axios.get('https://wakatime.com/share/@diasqazaqbro/966ccfd4-5f19-4ae6-ac3d-a07ff2a427f6.json', {
-      responseType: 'json',
-    })
-      .then((response) => {
-        dataItems1.value = response.data.data[0]
-        dataItems2.value = response.data.data[1]
-        dataItems3.value = response.data.data[2]
-      })
-    axios.get(`https://api.github.com/users/diasqazaqbro`)
-      .then(response => {
-        console.log(response.data)
-        github.value = response.data
-      })
-      .catch(error => {
-        console.error('Ошибка при получении репозиториев:', error)
-      })
-    return {
-      dataItems1, dataItems2, dataItems3, github, 
-    }
-  },
   data() {
     return {
       PoliteChicky,
+      info: [
+        {
+         title: 'Навык в владений React.js',
+          description: 'React`ом пользуюсь очень давно, я застал те времена когда был функциональный подход, но все пользовались классовым подходом. Были времена где все делали контейнеры для компонента, где redux был жестко неудобным.',
+          skills: ['react', 'react-router-dom', 'redux', 'redux-toolkit', 'next.js 14','vite', 'antd', 'bootsrap', 'sass/scss', 'react-select (и другие крутые библиотеки)'],
+          logo: 'fab fa-react',
+          percent: '85'
+        },
+        {
+          title: 'Навык в владений Vue.js',
+          description: 'Недавно начал пользоваться Vue.js и мне казалось это новым глатком воздуха в этом айтишном мире. Даже хочется использовать Vue чаще чем React.',
+          skills: ['vue 3', 'vuex', 'vue router', 'vuetlify', 'vite', 'sass', 'lottie animation'],
+          logo: 'fab fa-vuejs',
+          percent: '45'
+        }
+      ]
     }
   },
 }
@@ -88,5 +73,4 @@ export default {
 
 
 <style>
-@import './styles.module.sass';
-</style>
+@import './styles.module.sass';</style>
