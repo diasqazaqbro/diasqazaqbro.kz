@@ -5,7 +5,7 @@
       </figure>
     </div>
     <p>На этой недел я писал код на
-      <span :style="{ color: dataItems1.color }">{{ dataItems1.name }}</span>,<span
+      <span :style="{ color: dataItems1.color }">{{ dataItems1.name }}</span>, <span
         :style="{ color: dataItems2.color }">{{ dataItems2.name }}</span>, <span :style="{ color: dataItems3.color }">{{
           dataItems3.name }}</span> и т.д
     </p>

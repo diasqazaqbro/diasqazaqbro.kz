@@ -2,7 +2,7 @@
   <div class='container'>
     <Breadcrumb :breadcrumb='breadcrumb' />
     <div class='about'>
-      <h2>Если коротко</h2>
+      <h2 class="title">Если коротко</h2>
       <p> Я - Frontend/Backend веб-разработчик. В разработке с 2018 года и я постоянно развиваюсь и изучаю новые технологии в сфере IT. Я живу и работаю в <span class='text-blue'>Алмате (часовой пояс GMT+6)</span>.
         <br> <br>
         Для работы я предпочитаю продукцию <span class='text-blue'>Apple</span> такие как <span class='text-blue'>MacBook и iPad</span>, мой основной компьютер - <span class='text-blue'>MacBook Air 13” (2022)</span>. Пишу код в редакторе <span class='text-blue'>Visual Studio Code</span>.

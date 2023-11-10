@@ -20,11 +20,7 @@
 </template>
 
 <script lang='ts'>
-import { Post } from '../../../entities/Post'
 export default {
-  components: {
-    Post
-  },
   props: {
     info: {
       type: Object,
