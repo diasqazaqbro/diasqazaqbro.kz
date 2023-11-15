@@ -3,7 +3,7 @@
     <div @click='toggleShow' :style='backgroundCard' class='card' id='card'>
       <div class='title'>
         <v-row>
-          <v-col cols='1'>
+          <v-col class="d-sm-block d-none" cols='1'>
             <v-avatar class='ava' color="surface-variant" size="50" />
             <!-- <v-avatar image="smirk.png" size="50"></v-avatar> -->
           </v-col>
