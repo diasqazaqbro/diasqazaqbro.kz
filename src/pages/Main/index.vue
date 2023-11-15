@@ -54,7 +54,7 @@ export default {
         {
          title: 'Навык в владений React.js',
           description: 'React`ом пользуюсь очень давно, я застал те времена когда был функциональный подход, но все пользовались классовым подходом. Были времена где все делали контейнеры для компонента, где redux был жестко неудобным.',
-          skills: ['react', 'react-router-dom', 'redux', 'redux-toolkit', 'next.js 14','vite', 'antd', 'bootsrap', 'sass/scss', 'react-select (и другие крутые библиотеки)'],
+          skills: ['react', 'react-router-dom', 'redux', 'redux-toolkit', 'next.js 14','vite', 'antd', 'bootsrap', 'sass/scss'],
           logo: 'fab fa-react',
           percent: '85'
         },

@@ -2,7 +2,7 @@
   <div v-for='(item, index) in info' :key='index' >
     <v-card class='skills rounded-xl' variant="tonal">
       <v-row>
-        <v-col cols='2'>
+        <v-col class="d-sm-block d-none" cols='2'>
           <v-progress-circular color="blue" :model-value="item.percent" :size="70" :width="12">
             <v-btn :icon="item.logo"></v-btn>
           </v-progress-circular>

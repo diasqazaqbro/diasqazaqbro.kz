@@ -1,11 +1,11 @@
 <template>
   <div class='profile'>
     <v-row justify="center">
-      <v-col cols="3">
+      <v-col class="d-sm-block d-none" cols="3">
         <v-avatar class='avatar' image="https://avatars.githubusercontent.com/u/102165173?v=4"
           size="150"></v-avatar>
       </v-col>
-      <v-col cols='9'>
+      <v-col md="9" sm="12" >
         <div class='me'>
           <h2><a href=''>{{ randomGreeting }},</a> Я Frontend <br> Разработчик.</h2>
           <div class='social'>

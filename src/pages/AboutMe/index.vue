@@ -31,7 +31,7 @@ export default {
         {
           title: 'Разработка Frontend',
           description: 'Моя основная специализация. Я использовал React с 2019 года и с недавнего времени использую Vue. При вёрстке интерфейсов использую БЭМ, Flexbox, а если придётся, то и Grid.Стараюсь соблюдать гайдлайны семантической вёрстки.',
-          skills: ['html5', 'javascript (es2021)', 'css3(flexbox, grid)', 'spa', 'pwa', 'vue3 (vuex, vue router, vuetify)', 'react (redux-toolkit, react-router-dom)',],
+          skills: ['html5', 'javascript (es2021)', 'css3(flexbox, grid)', 'spa', 'pwa', 'vue3', 'veux', 'vue router', 'vuetify' ,'react', 'redux-toolkit', 'react-router-dom' , 'react-native'],
           logo: 'fab fa-react',
           percent:'70'
         },
